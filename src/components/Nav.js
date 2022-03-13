@@ -28,11 +28,7 @@ function Nav(props) {
     // only render the nav_black background when the show is true and nav_black is true, otherwise the background is transparent
     <div className={`nav ${show && 'nav_black'}`}>
       <div className='nav_content'>
-        <img
-          className='nav_logo'
-          src='https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png'
-          alt=''
-        />
+        <img className='nav_logo' src='/logo.png' alt='' />
         <div className='nav_links'>
           <p>Home</p>
           <p>TV Shows</p>

@@ -19,7 +19,8 @@
   display: none;
 }
 
-.row_poster {
+.row_poster,
+.row_posterLarge {
   max-height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -33,32 +34,27 @@
   cursor: pointer;
 }
 
-.row_poster:hover {
+.row_poster:hover,
+.row_posterLarge:hover {
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
-  opacity: 1;
 }
 
 .row_posterLarge {
-  border-radius: 2px;
   max-height: 250px;
-  cursor: pointer;
-}
-
-.row_posterLarge:hover {
-  -webkit-transform: scale(1.09);
-          transform: scale(1.09);
-  opacity: 1;
 }
 
 .row_fade,
 .row_fade_Large {
+  pointer-events: none;
   width: 100px;
   height: 100px;
   position: absolute;
   right: 0;
   background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(37, 37, 37, 0.61)), to(#111));
   background-image: linear-gradient(90deg, transparent, rgba(37, 37, 37, 0.61), #111);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 .row_fade_Large {
