@@ -1,0 +1,65 @@
+.banner {
+  background-size: 'cover';
+  background-position: 'center center';
+  position: relative;
+  height: 525px;
+  color: #fff;
+  object-fit: contain;
+  // object-fit contain keeps the aspect ratio when resizing window
+}
+
+.banner_contents {
+  margin-left: 40px;
+  padding-top: 130px;
+  height: 270px;
+  text-shadow: 0px 0px 5px #111;
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  p:first-of-type {
+    padding-top: 1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  p:nth-of-type(2) {
+    width: 45rem;
+    line-height: 1.5;
+    padding: 1rem 0 1rem 0;
+    font-size: 1rem;
+    max-width: 360px;
+    max-height: 100px;
+  }
+}
+
+.banner_buttons button {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  &:first-child:hover {
+    color: #e6e6e6;
+    background-color: #e50914;
+    transition: all 0.2s;
+  }
+}
+
+// invisible div on the bottom of page
+// linear gradient(degrees, start color, midpoint color, end color)
+.banner--fadeBottom {
+  height: 8rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
