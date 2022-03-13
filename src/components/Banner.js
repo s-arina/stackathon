@@ -54,16 +54,17 @@ function Banner(props) {
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <p>
-          {movie.vote_average} &#183; {movie.original_language}
+          <span style={{ color: 'yellow' }}>&#9733;</span> {movie.vote_average}{' '}
+          &#183; {movie.original_language}
         </p>
         {/* cut the description off at 150 characters */}
-        <p>{truncate(movie?.overview, 151)}</p>
+        <p>{truncate(movie?.overview, 150)}</p>
         <div className='banner_buttons'>
           <button>PLAY</button>
           <button>&#9432; MORE INFO</button>
         </div>
       </div>
-      <div className='banner--fadeBottom' />
+      <div className='banner_fade' />
     </header>
   );
 }

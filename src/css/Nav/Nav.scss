@@ -1,18 +1,30 @@
-.nav_content {
-  display: flex;
-  justify-content: space-between;
-}
-
 .nav {
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   padding: 20px;
   width: 100%;
-  height: 30px;
   z-index: 1;
-
   transition-timing-function: ease-in;
   transition: all 0.5s;
+}
+
+.nav_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  p {
+    color: #fff;
+  }
 }
 
 .nav_black {
@@ -20,8 +32,6 @@
 }
 
 .nav_logo {
-  position: fixed;
-  top: 10px;
   left: 0;
   width: 80px;
   object-fit: contain;
@@ -30,8 +40,7 @@
 }
 
 .nav_avatar {
-  position: fixed;
-  right: 20px;
+  height: 30px;
   width: 30px;
   cursor: pointer;
 }

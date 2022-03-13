@@ -42,19 +42,29 @@
   padding-left: 2rem;
   padding-right: 2rem;
   margin-right: 1rem;
-  background-color: rgba(51, 51, 51, 0.5);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  &:first-child:hover {
-    color: #e6e6e6;
+  &:first-child {
     background-color: #e50914;
-    transition: all 0.2s;
+    &:hover {
+      color: #e50914;
+      background-color: #e6e6e6;
+      transition: all 0.5s;
+    }
+  }
+  &:nth-child(2) {
+    background-color: rgba(51, 51, 51, 0.5);
+    &:hover {
+      color: #000;
+      background-color: #e6e6e6;
+      transition: all 0.5s;
+    }
   }
 }
 
 // invisible div on the bottom of page
 // linear gradient(degrees, start color, midpoint color, end color)
-.banner--fadeBottom {
+.banner_fade {
   height: 8rem;
   background-image: linear-gradient(
     180deg,

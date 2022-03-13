@@ -45,19 +45,33 @@
   padding-left: 2rem;
   padding-right: 2rem;
   margin-right: 1rem;
-  background-color: rgba(51, 51, 51, 0.5);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.banner_buttons button:first-child:hover {
-  color: #e6e6e6;
+.banner_buttons button:first-child {
   background-color: #e50914;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
-.banner--fadeBottom {
+.banner_buttons button:first-child:hover {
+  color: #e50914;
+  background-color: #e6e6e6;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.banner_buttons button:nth-child(2) {
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.banner_buttons button:nth-child(2):hover {
+  color: #000;
+  background-color: #e6e6e6;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.banner_fade {
   height: 8rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(37, 37, 37, 0.61)), to(#111));
   background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
