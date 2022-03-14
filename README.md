@@ -2,7 +2,7 @@
 
 > > A Netflix clone app using:
 
-- react
+- react / react hooks
 - firebase (not deployed yet)
 - scss
 
@@ -13,4 +13,4 @@ So far the homepage is laid out! But there's no functionality.
 - more unique styling for css/scss practice
 - login/logout user functionality
 - payment
-- single movie view
+- single movie view (possibly show trailers on click)

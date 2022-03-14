@@ -35,6 +35,15 @@
     p {
       color: #fff;
     }
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        text-decoration-thickness: 4px;
+        color: #e50914;
+      }
+    }
   }
   .nav_avatar {
     height: 30px;

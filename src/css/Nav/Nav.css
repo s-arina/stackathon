@@ -55,6 +55,17 @@
   color: #fff;
 }
 
+.nav_content .nav_links a {
+  text-decoration: none;
+}
+
+.nav_content .nav_links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 4px;
+  color: #e50914;
+}
+
 .nav_content .nav_avatar {
   height: 30px;
   width: 30px;

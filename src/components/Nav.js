@@ -30,7 +30,9 @@ function Nav(props) {
       <div className='nav_content'>
         <img className='nav_logo' src='/logo.png' alt='' />
         <div className='nav_links'>
-          <p>Home</p>
+          <a href='/'>
+            <p>Home</p>
+          </a>
           <p>TV Shows</p>
           <p>Movies</p>
           <p>New & Popular</p>
