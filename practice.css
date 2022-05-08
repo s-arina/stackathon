@@ -1,0 +1,27 @@
+.practice {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #facbcf;
+}
+
+.practice p {
+  color: #a8e9d5;
+}
+
+.practice p:hover {
+  background: black;
+}
+
+.practice h1 {
+  color: #a7c6ff;
+  width: 100px;
+}
+/*# sourceMappingURL=practice.css.map */
